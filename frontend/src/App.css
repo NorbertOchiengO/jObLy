@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.relative img {
+    z-index: 1;
+  }
+  
+  .absolute {
+    z-index: 0;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+  }
+  
+@layer components {
+  .btn-primary {
+   @apply block w-fit hover:bg-opacity-80
+        bg-primary text-white font-bold rounded-[10px];
+    }
+    .basic-input {
+      @apply w-full bg-[#F0F0F0] border border-[#B1B1B1] px-2 py-2 text-black rounded-[8px];
+    }
+}
+  
